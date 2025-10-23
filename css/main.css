@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;  
+    min-height: 100vh;   
 }
 
 header {
@@ -11,6 +14,7 @@ header {
     color: white;
     padding: 1em;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .menu {
@@ -39,10 +43,19 @@ header {
 
 /* Contenido principal */
 main {
+    display: flex;
+    flex: 1;                  
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: flex-start;
     padding: 2em;
+    gap: 2em;     
 }
 
 #presentacion, #razas, #detalle, #noticias, #formulario {
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;      
     background-color: white;
     border-radius: 10px;
     padding: 1.5em;
