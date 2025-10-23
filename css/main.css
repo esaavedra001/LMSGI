@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1em;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a.activo {
+    text-decoration: underline;
+}
+
+.center  {
+    text-align: center;
+}
+
+/* Contenido principal */
+main {
+    padding: 2em;
+}
+
+#presentacion, #razas, #detalle, #noticias, #formulario {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin: 1em auto;
+    max-width: 800px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#razas article, #noticias article {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+#detalle img {
+    display: block;         
+    margin: 0 auto; 
+    width: 20%;                  
+    height: auto;                  
+}
+
+#presentacion img {
+    display: block;         
+    margin: 0 auto; 
+    width: 40%;                  
+    height: auto;                  
+}
+
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.redes a {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+.redes a:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}

@@ -1,0 +1,74 @@
+<!--
+Lenguaje de marcas y sistemas de gestión de la información.
+UD2
+Tarea: SITIO WEB
+"En esta actividad se pide desarrollar el sitio web diseñado en la primera tarea de evaluación."
+Estizen Saavedra Castelo
+12/10/2025
+Autoevaluación 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--Se crea cabecera con menú de navegación principal-->
+<header>
+    <h1>Contacto</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="razas.html">Razas</a></li>
+            <li><a href="bichonmaltes.html">Bichón Maltés</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+      <!-- Se crea formulario con diferentes opciones y cuadro de texto desplegable-->
+        <form id="form"  action="mailto:esaavedra@birt.eus" method="get">
+            <fieldset>
+                <legend><h3>Contacta con nosotros</h3></legend>
+                    <label for="fnamenom1">Nombre:</label><br>
+                    <input type="text" id="fnamenom1" name="nombre1" value="nombre"><br>
+                    <label for="fnameapel1">Email:</label><br>
+                    <input type="text" id="fnameemail" name="email" value="email"><br>
+                    <label for="tem">Elige el tema:</label><br>
+                <select id="tem" name="tema">
+                    <option value="sugerencias">Hablar con Nutri</option>
+                    <option value="notica">Hacer sugerencias a Nutri</option>
+                    <option value="colaborar">Colaborar</option>
+                    <option value="otros">Otros</option>
+                </select>
+                    <br>
+                    <label for="fnamemens">Mensaje</label><br>
+                    <textarea type="text" id="fnamemens" name="mensaje" value="mensaje"> </textarea>              
+                    <br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <!-- Se crea sección donde se inluyen botónes para redes sociales, no tienen url porque no se han creado redes para la página-->
+        <h4 class="center">Redes Sociales</h4>
+        <nav class="redes">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </nav>
+    </section>
+</main>
+
+<!--Se crea pie de página para información de autoría-->
+<footer>
+    <p>Estizen Saavedra Castelo</p>
+</footer>
+</body>
+</html>
